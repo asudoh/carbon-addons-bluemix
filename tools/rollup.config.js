@@ -12,7 +12,7 @@ module.exports = {
     resolve(),
     commonjs({
       include: 'node_modules/**',
-      sourceMap: false,
+      sourceMap: true,
     }),
     babel({
       exclude: ['node_modules/**'], // only transpile our source code
