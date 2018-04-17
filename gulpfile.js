@@ -5,6 +5,7 @@ const path = require('path');
 
 // Styles
 const sass = require('gulp-sass');
+const eyeglass = require('eyeglass');
 const autoprefixer = require('gulp-autoprefixer');
 
 // Javascript deps
@@ -162,10 +163,12 @@ gulp.task('sass:compiled', () => {
       .src('src/globals/scss/styles.scss')
       .pipe(sourcemaps.init())
       .pipe(
-        sass({
-          outputStyle: prod ? 'compressed' : 'expanded',
-          includePaths: ['./node_modules'],
-        }).on('error', sass.logError)
+        sass(
+          eyeglass({
+            outputStyle: prod ? 'compressed' : 'expanded',
+            includePaths: ['./node_modules'],
+          })
+        ).on('error', sass.logError)
       )
       .pipe(
         autoprefixer({
@@ -201,10 +204,12 @@ gulp.task('sass:dev', () =>
     .src('demo/scss/demo.scss')
     .pipe(sourcemaps.init())
     .pipe(
-      sass({
-        outputStyle: 'expanded',
-        includePaths: ['./node_modules'],
-      }).on('error', sass.logError)
+      sass(
+        eyeglass({
+          outputStyle: 'expanded',
+          includePaths: ['./node_modules'],
+        })
+      ).on('error', sass.logError)
     )
     .pipe(
       autoprefixer({

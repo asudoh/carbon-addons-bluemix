@@ -2,17 +2,17 @@
 // Card
 //-----------------------------
 
-@import 'carbon-components/scss/globals/scss/colors';
-@import 'carbon-components/scss/globals/scss/helper-mixins';
-@import 'carbon-components/scss/globals/scss/layout';
-@import 'carbon-components/scss/globals/scss/layer';
-@import 'carbon-components/scss/globals/scss/typography';
-@import 'carbon-components/scss/globals/scss/import-once';
-@import 'carbon-components/scss/globals/scss/css--reset';
-@import 'carbon-components/scss/globals/scss/css--typography';
-@import 'carbon-components/scss/components/overflow-menu/overflow-menu';
-@import 'carbon-components/scss/components/button/button';
-@import 'carbon-components/scss/components/link/link';
+@import 'carbon-components/globals/scss/colors';
+@import 'carbon-components/globals/scss/helper-mixins';
+@import 'carbon-components/globals/scss/layout';
+@import 'carbon-components/globals/scss/layer';
+@import 'carbon-components/globals/scss/typography';
+@import 'carbon-components/globals/scss/import-once';
+@import 'carbon-components/globals/scss/css--reset';
+@import 'carbon-components/globals/scss/css--typography';
+@import 'carbon-components/components/overflow-menu/overflow-menu';
+@import 'carbon-components/components/button/button';
+@import 'carbon-components/components/link/link';
 @import 'mixins';
 
 @include exports('cloud-card') {

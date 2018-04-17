@@ -2,18 +2,18 @@
 // Detail Page Header
 //-----------------------------
 
-@import 'carbon-components/scss/globals/scss/colors';
-@import 'carbon-components/scss/globals/scss/vars';
-@import 'carbon-components/scss/globals/scss/helper-mixins';
-@import 'carbon-components/scss/globals/scss/layout';
-@import 'carbon-components/scss/globals/scss/layer';
-@import 'carbon-components/scss/globals/scss/typography';
-@import 'carbon-components/scss/globals/scss/import-once';
-@import 'carbon-components/scss/globals/scss/css--reset';
-@import 'carbon-components/scss/globals/scss/css--typography';
-@import 'carbon-components/scss/components/tabs/tabs';
-@import 'carbon-components/scss/components/overflow-menu/overflow-menu';
-@import 'carbon-components/scss/components/breadcrumb/breadcrumb';
+@import 'carbon-components/globals/scss/colors';
+@import 'carbon-components/globals/scss/vars';
+@import 'carbon-components/globals/scss/helper-mixins';
+@import 'carbon-components/globals/scss/layout';
+@import 'carbon-components/globals/scss/layer';
+@import 'carbon-components/globals/scss/typography';
+@import 'carbon-components/globals/scss/import-once';
+@import 'carbon-components/globals/scss/css--reset';
+@import 'carbon-components/globals/scss/css--typography';
+@import 'carbon-components/components/tabs/tabs';
+@import 'carbon-components/components/overflow-menu/overflow-menu';
+@import 'carbon-components/components/breadcrumb/breadcrumb';
 @import 'mixins';
 
 @include exports('cloud-detail-page-header') {
